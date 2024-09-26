@@ -3,6 +3,8 @@
 /*
 TEXT
 */
+typedef unsigned char BYTE; // typedef
+
 
 int main()                  
 {   
@@ -37,5 +39,16 @@ int main()
     printf("Number 7 = %f \n", number7);
     long double number8 = 123456.789l;
     printf("Number 7 = %Lf \n", number8);
+    char letter = 'A';
+    printf("Letter = %c \n", letter);
+
+    // typedef
+   BYTE byte = 22;
+   printf("byte = %d \n", byte);
+
+   //sizeoff()
+    long double number9 = 123456.789l;
+    printf("Number 9 = %Lf \n", number9);
+    printf("sizeof(number9) = %d \n", sizeof(number9));
     return 0;
 }                           
