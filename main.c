@@ -6,6 +6,8 @@ TEXT
 typedef unsigned char BYTE; // typedef
 
 
+
+
 int main()                  
 {   
 	int number = 3;
@@ -50,5 +52,19 @@ int main()
     long double number9 = 123456.789l;
     printf("Number 9 = %Lf \n", number9);
     printf("sizeof(number9) = %d \n", sizeof(number9));
+
+    const int number10 = 124;
+    printf("Number10 = %d \n", number10);
+
+
+    // Преобразование
+  	int a = 10;
+  	int b = 4;
+  	int c = a / b;
+  	double d = a / b;
+  	double e = (double)a / (double)b;
+  	printf("C = %d \n", c);
+  	printf("D = %f \n", d);
+  	printf("E = %f \n", e);
     return 0;
 }                           
